@@ -5,7 +5,7 @@ Click on the [following URL](https://githubbox.com/greg1951/06-eat-n-split) to o
 
 Below is a **static rendering** of the components in the app.
 
-![Split Bill-Static](readme-screenshots/split-bill-static-rendering.png)
+![Split Bill-Static](readme-screenshots/section%208/split-bill-static-rendering.png)
 
 There are five visible components shown above, as outlined in various colors.
 1. **List of Friends**
@@ -142,7 +142,7 @@ export default function App() {
 
 Additional behavior implemented in the above JSX is to modify the button text from **Add Friend** to **Close**, once the form is opened. 
 
-![Add Friend-Close Button](readme-screenshots/add-friend-close-button.png)
+![Add Friend-Close Button](readme-screenshots/section%208//add-friend-close-button.png)
 
 ## Adding a Friend to the Friends Array
 
@@ -241,7 +241,7 @@ function FormAddFriend({onAddFriend}) {
 
 The desired behavior is that when a **Friend** component is selected then the **FormSplitBill** component should be rendered, as shown below.
 
-![Split Bill-Close Button](readme-screenshots/split-bill-close-button.png)
+![Split Bill-Close Button](readme-screenshots/section%208//split-bill-close-button.png)
 
 To transfer the select **Friend** component details requires that state be transferred from the Friend component, to the **FormSplitBill** component. To do this, information about the selected Friend then needs to be shared from the top parent component (i.e. **App**).
 

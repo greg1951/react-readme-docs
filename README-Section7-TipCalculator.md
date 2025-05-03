@@ -4,7 +4,7 @@ This exercise was at the end of Section 7 and it was indeed challenging. It was 
 ## The Challenge
 Build an app that calculates a restaurant tip amount based on the check amount and 2 service ratings. Each of the service ratings are based on percentages derviced from a common selection list. 
 
-![Tip Calculator UI](readme-screenshots/tip-calculator-challenge.png)
+![Tip Calculator UI](readme-screenshots/sections1-7/tip-calculator-challenge.png)
 
 The solution should employ good uses of:
 * A common component for the service rating selection

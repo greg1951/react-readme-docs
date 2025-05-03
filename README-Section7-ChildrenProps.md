@@ -6,7 +6,7 @@ The V1 version of the Steps app (a VSCode project) has two buttons to drive *Pre
 
 In the screenshot below, the emojis were placed in a fixed position before the text. The change utilizing children properties would place the emjis before and after the text, depeding on whether it is Previous or Next. The Button compoment in this case uses the reserved **React children prop** to do this.
 
-![Steps UI Before Change](readme-screenshots/steps-b4-children.png)
+![Steps UI Before Change](readme-screenshots/sections1-7/steps-b4-children.png)
 
 ## Button Component Before Children Props
 The key below is to note the *emoji* and *text* props have fixed positions in the rendering of the **Button component**.
@@ -83,4 +83,4 @@ Note **Button component** references the **children** prop, at the place where t
   }
 ```
 Here is the rendered UI after the above changes.
-![Steps UI After Change](readme-screenshots/steps-after-children.png)
+![Steps UI After Change](readme-screenshots/sections1-7/steps-after-children.png)

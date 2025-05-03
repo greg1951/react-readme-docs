@@ -41,7 +41,7 @@ This is a **Chrome extension**, not VS Code. [Click here to add to your Chrome b
 
 In the Console tab of the Developer Tools you can find the **Components** view. Click it and then move it to a more convenient location in the tabs. It will show all of the components on the page, their props and state. *You can also manipulate the state variables to see the re-rendering*, as shown below.
 
-![Chrome React Developer Tools](readme-screenshots/chrome-react-dev-tools.png)
+![Chrome React Developer Tools](readme-screenshots/tools-tips/chrome-react-dev-tools.png)
 
 **MAIN TAKEAWAY**: However, once a page has many components on it, then the **Component tree view** in this extension will be most worthwhile, as a way to locate the state of one of the components.
 
@@ -211,7 +211,7 @@ In the previous example if instead of the const declaration of the step variable
 
 When the state underlying a component view changes, React will re-render the component, essentially removing it and calling the component again. However, state is preserved during re-rendering, in order for the view to be updated.
 
-![View Update Steps](readme-screenshots/component-view-re-rendered.png)
+![View Update Steps](readme-screenshots/concepts/component-view-re-rendered.png)
 
 ### Updating Current State Based on Current State
 
@@ -263,7 +263,7 @@ Interestingly the ```console.logs``` still showed the value of the **step** stat
 
 The next sets of notes are based on the construction of the **Far Away application** that will implement a number of interactive React components, as shown below.
 
-![Far Away App](readme-screenshots/section6-faraway-app-components.png)
+![Far Away App](readme-screenshots/sections1-7/section6-faraway-app-components.png)
 
 ## Project Creation Steps
 
@@ -522,7 +522,7 @@ The above function can be simplified even more by the use of a **ternary conditi
 
 This was an upgrade to an earlier exercise, but to introduce a slider input type and how to reset a form, as shown below.
 
-![Day Stepper Form](readme-screenshots/day-stepper-app.png)
+![Day Stepper Form](readme-screenshots/sections1-7/day-stepper-app.png)
 
 The Reset button is only visible when the Step or Count states have changed.
 
@@ -721,11 +721,11 @@ function Item({item, onDeleteItems}) {
 
 Be cognizant of your state variables, ensuring you absolutely need them as they require they are synchronized. As shown below the numItems and totalPrice are unnecessary, as their values can be derived from other state.
 
-![Derived State](readme-screenshots/derived-state.png)
+![Derived State](readme-screenshots/concepts/derived-state.png)
 
 The other issue is that if any of the state variables are updated re-rendering occurs. If there are three state variable, three re-renderings occur. Shown below is a better solution.
 
-![Derivation](readme-screenshots/deriving-from-state.png)
+![Derivation](readme-screenshots/concepts/deriving-from-state.png)
 
 ## Conditional Rendering Example
 
@@ -763,7 +763,7 @@ function Stats({items}) {
 
 In the Far Away app, the rendering of the **PackingList** can be sorted three ways, as shown below.
 
-![Sort PackingList](readme-screenshots/sort-packing-list-example.png)
+![Sort PackingList](readme-screenshots/sections1-7/sort-packing-list-example.png)
 
 1. The state for the sorting can be confined to the **PackingList** component, it does not need to be shared (or "lifted").
 
@@ -861,4 +861,3 @@ export default function App() {
   )
 }
 ```
-

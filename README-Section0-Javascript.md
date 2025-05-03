@@ -136,7 +136,7 @@ Download and install the *Prettier Code Formatter* extension and select it in th
 ### Quokka.js
 Install the Quokka.js VS Code extension and run the ```Start on Current File``` Command. This extension is invaluable to get immediate feedback on the Javascript, as seen in the screenshot below. There is also a **Quokka Log** that contains structured output.
 
-![Quokka.js Extension](readme-screenshots/quokka-js-tool.png)
+![Quokka.js Extension](readme-screenshots/tools-tips/quokka-js-tool.png)
 
 ### For the course
 * To make your VS Code environment look like the instructor's, install the folowing.

@@ -2,7 +2,7 @@
 
 The V1 version of the acordion UI is shown below which was built in CodeSandbox. The CSS aspect of it was pretty well done by the instructor.
 
-![Accordion-V1](readme-screenshots/accordion-example-ui.png)
+![Accordion-V1](readme-screenshots/sections1-7/accordion-example-ui.png)
 
 ## App Component
 
