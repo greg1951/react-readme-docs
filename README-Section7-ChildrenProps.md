@@ -1,3 +1,6 @@
+1. [Reusable Buttons Example](#reusable-buttons-example)
+   1. [Button Component Before Children Props](#button-component-before-children-props)
+   2. [Button Component After Children Props](#button-component-after-children-props)
 # Reusable Buttons Example
 
 The V1 version of the Steps app (a VSCode project) has two buttons to drive *Previous* and *Next* functionality. In this example, the buttons are reimplemented using a **reusable Button component** and **children properties**. 
@@ -9,7 +12,9 @@ In the screenshot below, the emojis were placed in a fixed position before the t
 ![Steps UI Before Change](readme-screenshots/sections1-7/steps-b4-children.png)
 
 ## Button Component Before Children Props
-The key below is to note the *emoji* and *text* props have fixed positions in the rendering of the **Button component**.
+The desired button look and feel is to make the Button component flexible such that we can avoid having fixed positions in the rendering of the emoji in previous and next buttons. This is where JSX can be wrapped around the emoji and text to allow props children to be used to so the **Previous button** rendering is used more flexibly.
+
+![Steps UI After Change](readme-screenshots/sections1-7/steps-after-children.png)
 
 ```javascript
   ...
@@ -82,5 +87,4 @@ Note **Button component** references the **children** prop, at the place where t
     );
   }
 ```
-Here is the rendered UI after the above changes.
-![Steps UI After Change](readme-screenshots/sections1-7/steps-after-children.png)
+

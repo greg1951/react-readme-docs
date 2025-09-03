@@ -1,7 +1,7 @@
 # Section 8 - Eat and Split App
-There are no new concepts introduced in this exercise. Its purpose is to reinforces all of the React concepts covered so far in the Udemy course. (The project resides on a private GitHub repo. 
+There are no new concepts introduced in this exercise. Its purpose was to reinforce all of the React concepts covered so far in the Udemy course. 
 
-Click on the [following URL](https://githubbox.com/greg1951/06-eat-n-split) to open a browser and preview the project in CodeSandbox.
+The project resides on a private GitHub repo: [follow this URL](https://githubbox.com/greg1951/06-eat-n-split) to open a browser and preview the project in **CodeSandbox**.
 
 Below is a **static rendering** of the components in the app.
 
@@ -14,12 +14,12 @@ There are five visible components shown above, as outlined in various colors.
 4. **Add Friend** button
 5. **Split a Bill** form
 
-In addition other utility components (e.g. Button) can be derived from the design.
+In addition other utility components (e.g. **Button**) can be derived from the design.
 
 When the component tree design is actualized then a static rendering of the application is begun.
 
 ## FriendsList and Friend Components
-* Out of habit I tried to use a **ternary conditional** to format the className and the text on who owes who what but since there are three cases, then it was necessary to use the **&& conditional** to style and set the proper wording, as shown below.
+* Note below the use of the **&& conditional** to style and set the proper wording.
 
 ```javascript
 function FriendsList() {
@@ -49,7 +49,7 @@ function Friend({friend}) {
 }
 ```
 
-The button functionality was componentized as well, which reused some of the detail about buttons, making use of chidren properties to render the button name.
+The button functionality was componentized, which reused some of the detail about a button (e.g. *className*). It made use of **chidren properties** to render the button name.
 
 ```javascript
 function Button({children}) {
@@ -60,7 +60,7 @@ function Button({children}) {
 ```
 ## FormAddFriend Component
 
-The **FormAddFriend** component is rendered in the side bar, below the list of friends. (Static version is shown below.)
+The **FormAddFriend** component is rendered in a side bar on the page, providing the list of friends. (Static version is shown below.)
 
 ```javascript
 function FormAddFriend() {
@@ -80,7 +80,9 @@ function FormAddFriend() {
 
 ## FormSplitBill Component
 
-The **FormSplitBill** component was very much like the one above, except it had its own CSS class. (Static version is shown below. When a friend is selected, then the friend's name will show up in the form in lieu of *Someone*.) 
+The **FormSplitBill** component was very much like the one above. (The static version is shown below. When a friend is selected, then the friend's name will show up in the form in lieu of *Someone*. )
+
+At some point, controlled elements (state) will be added to capture the values of each input.
 
 ```javascript
 function FormSplitBill() {
@@ -275,7 +277,7 @@ export default function App() {
 }
 ```
 
-A Javascript feature called **optional chaining** was used to prevent an error accessing properties of a null object. Use of a "**?**" after the object name will prevent the "*Cannot read properties of null*" error when the selectedFriend object was null (by default), as shown in the snippet below.
+A Javascript feature called **optional chaining** was used. Use of the "**?**" syntax after the object name prevents the "*Cannot read properties of null*" error when the selectedFriend object is null (default value), as shown in the snippet below.
 
 ```javascript
 function Friend({friend, onSelectFriend, selectedFriend}) {
