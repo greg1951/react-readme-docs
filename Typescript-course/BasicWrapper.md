@@ -6,7 +6,9 @@
 
 # Basic Wrapper Features
 
-An `Input` component is to be built that can be used anywhere in the app where an input needs to be captured. At a high-level, the markup below explains what it consists of.
+An `Input` component provides the ability to get user input anywhere in the app and is an important component used in the `Form` component also described here.
+
+At a high-level, the markup below explains what it consists of (with some React bells and whistles, of course).
 
 ```javascript
 export default function Input(props) {
@@ -96,6 +98,7 @@ export default function Button(props: ButtonProps | AnchorProps) {
 In addition to the usual props captured by the ComponentPropsWithoutRef type, we want to also capture the event handler associated with the form submission, we'll also include the a custom prop to it that provides it.
 
 ```javascript
+import { type ComponentPropsWithoutRef, type FormEvent } from "react";
 type FormProps = ComponentPropsWithoutRef<"form"> & {
   onSave: (value: unknown) => void,
 };
@@ -150,7 +153,7 @@ export default function Form({ onSave, children, ...otherProps }: FormProps) {
 }
 ```
 
-The App component shown below implements the wrapper.
+The App component shown below implements all of the wrappers.
 
 Note in the `saveHandler event handler` below the type matches the **unknown** type as defined in the wrapper `Form component`. However, a conversion of _data_ using the **as keyword** redefines it using the form types defined here.
 

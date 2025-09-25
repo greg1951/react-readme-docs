@@ -1,6 +1,6 @@
 # Using Zod Typescript Validation
 
-The Zod library provides an easy way to define schema that Typescript can use to validate Typescript in the project.
+The Zod library provides an easy way to define schema that Typescript can use to validate Typescript in the application.
 
 # Setup
 
@@ -8,7 +8,7 @@ Simply run `npm install zod` in a project terminal.
 
 # App Component
 
-Here is the Zod implementation of the project. (The main branch in GitHub contains the original, non-Zod project.)
+Here is the Zod implementation of the project. ([The main branch in GitHub](https://github.com/greg1951/react-typescript-data-fetching) contains the original, non-Zod project. The [feature/zod branch](https://github.com/greg1951/react-typescript-data-fetching/tree/feature/zod) has all of the Zod code.)
 
 ```javascript
 import { type ReactNode, useEffect, useState } from "react";
@@ -18,7 +18,7 @@ import { get } from "./components/util/http";
 import fetchingImg from "./assets/data-fetching.png";
 import { z } from "zod";
 
-// new Zod schemas to replace generic type definition
+// Two new Zod schemas below
 const rawDataBlogPostSchema = z.object({
   id: z.number(),
   userId: z.number(),
@@ -80,11 +80,11 @@ export default App;
 
 **Notes:**
 
-- Added two Zod schemas above the App component. (That location ensures the schemas are only created once.)
+- Two new Zod schemas were added, above the start of the App component. (That location ensures the schemas are only created once.)
 
 - The `data` variable constaining the posts retrieved from the `get` utility function are simply converted, without the necessity for an alias.
 
-- The `parse` method associated with the Zod `expectedResponseDataSchema` schema knows about the schema and allows a conversion by Zod.
+- The `parse` method associated with the Zod `expectedResponseDataSchema` schema knows about the schema and allows a conversion by Zod. **Didn't have to write the conversion.**
 
 - For comparison purposes, here is what was required **without Zod**.
 

@@ -4,17 +4,17 @@ This public GitHub project contains the README files I created whilst going thro
 
 ## GitHub Initialization Commands
 
-After creating the GitHub repo, I ran these commands to commit the files to the repo.
+Before running the commands, login to GitHub and create a private repo on GitHub. For the repo specify a `.gitignore` file using Node template. Create a README markdown file as well.
 
-If your are creating a Typescript project with Vite, be sure to copy in a good node .gitignore file before the git init command.
+Copy the repo URL into the 2nd command below. Then run them in a terminal window in the new project.
 
 ```sh
 git init
-git add README.md
+git remote add origin https://github.com/greg1951/typescript-zod-redux-book-session-exercise.git
+git pull origin master
+git add .
 git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/greg1951/react-readme-docs.git
-git push -u origin main
+git push -u origin master --force
 git branch develop
 git checkout develop
 ```
