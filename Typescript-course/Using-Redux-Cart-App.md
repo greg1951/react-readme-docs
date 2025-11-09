@@ -31,7 +31,7 @@ The sample application is that of a shopping application with products and a sho
 
 Create a src/store directory and in there begin creating TS files that will define the Redux configs for the application.
 
-1. In the create a `src/cart-slice.ts` file that defines the state associated with the shopping cart application.
+1. Create the `src/cart-slice.ts` file that defines the state associated with the shopping cart application.
 
    **Note**: The RTK `createSlice` function accepts an initial state, an object of reducer functions, and a "slice name", and automatically generates action creators and action types that correspond to the reducers and state.
 

@@ -10,11 +10,11 @@ Copy the repo URL into the 2nd command below. Then run them in a terminal window
 
 ```sh
 git init
-git remote add origin https://github.com/greg1951/typescript-zod-redux-book-session-exercise.git
-git pull origin master
+git remote add origin https://github.com/greg1951/max-reactjs-refresher-project.git
+git pull origin main
 git add .
 git commit -m "first commit"
-git push -u origin master --force
+git push -u origin main
 git branch develop
 git checkout develop
 ```
