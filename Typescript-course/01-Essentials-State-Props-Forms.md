@@ -22,18 +22,12 @@
 
 ## VS Code Typescript Setup
 
-Run the following command in a terminal window after creating a .ts file to provide typescript error checking. 
-
-```
-npm install typescript --save-dev
-```
-
 ## Create VS Code Typescript Project
 
 1. Run the command below in the project directory and then drag new folder into VS Code.
 
 ```
-npm create vite@latest react-ts-basics
+    npm create vite@latest my-react-ts-app -- --template react-ts
 ```
 
 2. Open a terminal in the project and run the commands below.
@@ -46,6 +40,14 @@ npm run dev
 3. Open a Simple Browser in VS Code and reference ```http://localhost:5173```
 
 ## Recap of Typescript Basics
+
+**Note**:
+
+Run the following command in a terminal window after creating a .ts file to provide typescript error checking. 
+
+```
+npm install typescript --save-dev
+```
 
 
 In the example below, TS can infer as a ```string``` from the variable declaration, and the assignment of a number would be a **javascript error**.
